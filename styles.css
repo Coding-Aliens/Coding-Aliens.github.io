@@ -1,0 +1,19 @@
+/* Your CSS goes here! */
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem; /* You can adjust this value for the desired size */
+}
+
+.image {
+    width: 200px; /* Fixed width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Keeps image at the same place on screen */
+    right: 20px; /* A little away from the right side */
+    top: 100px; /* Moves image further down */
+    z-index: 10; /* Ensures image stays on top of content but without covering it */
+}
+
+.content {
+    padding-right: 250px; /* Prevents content from being covered by the image */
+}

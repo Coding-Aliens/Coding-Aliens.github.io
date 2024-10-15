@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Work</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"></nav>
+            <div class="container-fluid d-flex">
+              <!-- Align items in a row -->
+              <a class="nav-link m-2" href="index.html">About Me</a>
+              <a class="nav-link m-2" href="my-work.html">My Work</a>
+            </div>
+        </nav>
+        <section class="m-3">
+            <h1 class="title">My Work</h1>
+            <img class = "image" src = "images/E-Commerce-1024x576.png" alt = "Image fails to load" title="Snapshot of my project">
+            <h2><em>Phase 1</em></h2>
+            <p class = "content">Developed and maintained an e-commerce platform using <strong>Spring Boot</strong> and <strong>MySQL</strong>, enabling user registration, login, and product purchasing functionalities. 
+                Also, applied Kafka to achieve the asynchronous operations of data.</p>
+            <h2><em>Phase 2</em></h2>
+            <ol>
+                <li>Refactored the application into a <em>microservice</em> architecture using <strong>SpringCloud</strong>, improving scalability and system
+                    resilience.</li>
+                <li>Implemented the frontend using React and Chatgpt. Optimized performance and user experience with Nginx as the
+                    web server, ensuring seamless integration.</li>
+            </ol>
+            <a href="https://github.com/Coding-Aliens/E-commerce">Click here to download</a>
+        </section>
+        <section>
+            <h2> <em>Kafka vs RabbitMQ</em></h2>
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Kafka</th>
+                        <th>RabbitMQ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Use Case</strong></td>
+                        <td>Designed for high-throughput, distributed streaming and log data processing.</td>
+                        <td>Message broker optimized for message delivery and routing in various message patterns.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Performance</strong></td>
+                        <td>High throughput with low latency, designed for large-scale data streaming.</td>
+                        <td>Lower throughput compared to Kafka, but optimized for reliable message delivery.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td><strong>Scalability</strong></td>
+                        <td>Highly scalable with horizontal scaling via partitions across multiple brokers.</td>
+                        <td>Can scale horizontally, but typically requires more complex configuration.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Message Size</strong></td>
+                        <td>Optimized for large message sizes with proper configuration.</td>
+                        <td>Better suited for smaller messages; large messages can affect performance.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+    </body>
+</html>
